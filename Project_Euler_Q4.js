@@ -8,8 +8,6 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 function reverse(s) {
     return s.split("").reverse().join("");
 }
-//this is a variable for the end answer. I couldn't figure out a way for it to not change with each loop, so I placed it outside of the function to initialize
-var answer = 0;
 
 /*
 This is the function that finds the highest palindromic product of whatever number is entered. 
@@ -23,6 +21,7 @@ If it comes back palindromic, AND greater than the variable answer, then Z becom
 
 */
 function testForPalindrome(x) {
+    var answer = 0;
     for (i = x; x > i * .9; x--) {
              
         for (y = i; y > i * .9; y--){
