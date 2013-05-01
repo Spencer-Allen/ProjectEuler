@@ -11,9 +11,10 @@ once the argument has reached zero, x has passed the divisibility test, and is p
  
 */
 
-var x = 0;
+
 
 function problemFive(y){
+  var x = 0;
   for (var i = y; y > 0 ; x++){
 		if (x % y === 0){
 			y--;
