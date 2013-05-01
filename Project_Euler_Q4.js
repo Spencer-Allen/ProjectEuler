@@ -23,7 +23,7 @@ If it comes back palindromic, AND greater than the variable answer, then Z becom
 
 */
 function testForPalindrome(x) {
-    for (var i = x; x > i * .9; x--) {
+    for (i = x; x > i * .9; x--) {
              
         for (y = i; y > i * .9; y--){
             var z = x * y;
