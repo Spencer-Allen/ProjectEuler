@@ -30,13 +30,13 @@ function runThroughBigNum(){
 	
 	for(i=0; i<bigNumSplit.length - 6; i++){
 		var j =i+1;
-		var	k =i+2;
-		var	l =i+3;
-		var	m =i+4;
+		var k =i+2;
+		var l =i+3;
+		var m =i+4;
 		var multiplier = bigNumSplit[i]*bigNumSplit[j]*bigNumSplit[k]*bigNumSplit[l]*bigNumSplit[m];
 		
 		if (multiplier > finalProduct) {
-			finalProduct = multiplier;
+		    finalProduct = multiplier;
 		}
 	}
 console.log(finalProduct);
