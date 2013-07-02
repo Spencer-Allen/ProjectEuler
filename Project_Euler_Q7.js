@@ -9,9 +9,9 @@ function primeTest(array, check) {
     for (var y = 0; y < array.length; y++) {
         if (array[y] >= Math.sqrt(check)){
     		return true;
-		}	
-		if (check % array[y] === 0) {
-            return false;
+	}	
+	if (check % array[y] === 0) {
+            	return false;
         }
     }
 }
