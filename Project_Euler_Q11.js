@@ -50,8 +50,8 @@ var matrix =   [[08, 02, 22, 97, 38, 15, 00, 40, 00, 75, 04, 05, 07, 78, 52, 12,
 var productHolder = 0;
 				
 var checkHorizontal = function(matrix){
-	for (a=0; a<matrix.length - 1; a++){
-		for (e=0; e<matrix[a].length -4; e++){
+	for (var a=0; a<matrix.length - 1; a++){
+		for (var e=0; e<matrix[a].length -4; e++){
 			var f = e+1; 
 			var g = e+2;
 			var h = e+3;
@@ -65,11 +65,11 @@ var checkHorizontal = function(matrix){
 } 
 
 var checkVertical = function(matrix){
-	for (a=0; a<matrix.length - 4; a++){
+	for (var a=0; a<matrix.length - 4; a++){
 			var b = a+1;
 			var c = a+2;
 			var d = a+3;
-		for (e=0; e<matrix[a].length -1; e++){
+		for (var e=0; e<matrix[a].length -1; e++){
 			var vertFormula = matrix[a][e]*matrix[b][e]*matrix[c][e]*matrix[d][e];
 			if (vertFormula > productHolder){
 			    productHolder = vertFormula;
@@ -80,11 +80,11 @@ var checkVertical = function(matrix){
 } 
 
 var checkDownDiag = function(matrix){
-	for (a=0; a<matrix.length - 4; a++){
+	for (var a=0; a<matrix.length - 4; a++){
 			var b = a+1;
 			var c = a+2;
 			var d = a+3;
-		for (e=0; e<matrix[a].length -4; e++){
+		for (var e=0; e<matrix[a].length -4; e++){
 			var f = e+1; 
 			var g = e+2;
 			var h = e+3;
@@ -98,11 +98,11 @@ var checkDownDiag = function(matrix){
 } 
 
 var checkUpDiag = function(matrix){
-	for (a=0; a<matrix.length - 4; a++){
+	for (var a=0; a<matrix.length - 4; a++){
 			var b = a+1;
 			var c = a+2;
 			var d = a+3;
-		for (e=0; e<matrix[a].length -4; e++){
+		for (var e=0; e<matrix[a].length -4; e++){
 			var f = e+1; 
 			var g = e+2;
 			var h = e+3;
