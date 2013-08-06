@@ -44,4 +44,4 @@ function calculateTriangleDivisors(input) {
     }
 }
 
-calculateTriangleDivisors();
+calculateTriangleDivisors(20000);
