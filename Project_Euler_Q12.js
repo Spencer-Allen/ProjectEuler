@@ -20,13 +20,13 @@ What is the value of the first triangle number to have over five hundred divisor
 
 function calculateTriangleDivisors(input) {
     var counterHolder = 0;
-    for (x = 1; x < input; x++) {
+    for (var x = 1; x < input; x++) {
         
         var y = x+1;
         var triangle = x * y / 2;
         var counter = 0;
         
-        for (y = 1; y <= Math.sqrt(triangle); y++) {
+        for (var y = 1; y <= Math.sqrt(triangle); y++) {
             if (triangle % y === 0) {
                 counter++;
             }
